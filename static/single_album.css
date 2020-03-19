@@ -10,7 +10,7 @@
 }
 
 body {
-    height: 98%%;
+    height: 98%;
 }
 
 h2, .header-text {
@@ -66,6 +66,15 @@ form {
 .delete-album {
     padding-left: .5em;
     align-self: center;
+}
+
+.btn-yellow {
+    border: none;
+    background-color: #e0c512;
+}
+
+.btn-yellow:hover {
+    background-color: #a6910c;
 }
 
 #delete-modal {
