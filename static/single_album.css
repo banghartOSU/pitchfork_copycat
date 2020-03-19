@@ -117,7 +117,7 @@ form {
     position: relative;
     max-height: 90%;
     max-width: 90%;
-    //padding-bottom: 100%;
+    /* //padding-bottom: 100%; */
 }
 
 img {
@@ -134,11 +134,11 @@ img {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    //max-height: 50%;
+    /* //max-height: 50%; */
 }
 
 .album-fact-header {
-    //flex-basis: 100%;
+    /* flex-basis: 100%; */
     text-decoration: underline;
     align-self: center;
     padding-right: .25em;

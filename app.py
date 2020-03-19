@@ -216,19 +216,12 @@ def delete_review_comment(uuid,**kwargs):
 
 @app.route("/route_to_edit/<page>/<validator>/<content>", methods=("GET", "POST"))
 def route_to_edit_page(page, validator, content):
-<<<<<<< HEAD
     """Route to edit a review comment page based on which comment is being reviewed."""
     kwargs = {"user_id": validator, "content": content}
     uuid_ = uuid.uuid4()
     ud_context[str(uuid_)] = kwargs
     return redirect(url_for((must_get_key({"review": "edit_review_comment"}, page)), uuid=uuid_))
-=======
-     """Route to edit a review comment page based on which comment is being reviewed."""
-     kwargs = {"user_id": validator, "content": content}
-     uuid_ = uuid.uuid4()
-     ud_context[str(uuid_)] = kwargs
-     return redirect(url_for((must_get_key({"review": "edit_review_comment"}, page)), uuid=uuid_))
->>>>>>> 08b7c32fe0318f40a427372788790a56b2ba1c58
+
 
 @app.route("/edit_review_comment/<uuid>", methods=("GET", "POST"))
 def edit_review_comment(uuid, **kwargs):
